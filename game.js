@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   startButton.style.padding = '15px 30px';
   startButton.style.fontSize = '1.8rem';
   startButton.style.color = 'white';
-  startButton.style.backgroundColor = '#0056b3'; // Schönere Blautöne
+  startButton.style.backgroundColor = '#0056b3'; 
   startButton.style.border = 'none';
   startButton.style.borderRadius = '10px';
   startButton.style.cursor = 'pointer';
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateScore() {
-    scoreDisplay.textContent = `Score: ${score} | Highscore: ${highScore}`;
+    scoreDisplay.textContent = `Punktzahl: ${score} | Highscore: ${highScore}`;
   }
 
   function updateTimer() {
@@ -254,8 +254,8 @@ document.addEventListener('DOMContentLoaded', () => {
     resultMessage.style.borderRadius = '10px';
     resultMessage.style.fontFamily = "'Poppins', sans-serif";
     resultMessage.innerHTML = `
-      <p style="font-size: 1.5rem;">Your Score: <strong>${score}</strong></p>
-      <p style="font-size: 1.5rem;">${isNewHighScore ? `<span style="color: green;">New Highscore: <strong>${highScore}</strong></span>` : `Highscore: <strong>${highScore}</strong>`}</p>
+      <p style="font-size: 1.5rem;">Deine Punktzahl: <strong>${score}</strong></p>
+      <p style="font-size: 1.5rem;">${isNewHighScore ? `<span style="color: green;">Neuer Highscore: <strong>${highScore}</strong></span>` : `Highscore: <strong>${highScore}</strong>`}</p>
     `;
 
     setTimeout(() => {
