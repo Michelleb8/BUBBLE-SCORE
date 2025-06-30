@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+a-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hud-container {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.timer-container {
+  flex: 1;
+  max-width: 80%;
+  height: 25px;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.timer-bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #001f4d, #004080, #3399ff, #ffffff);
+  transition: width 0.1s linear;
+}
+
+.score-display {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003366;
+  white-space: nowrap;
+}
+
+.result-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #003366;
+  background-color: #f0f8ff;
+  border: 2px solid #0077cc;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none;
+  line-height: 1.8;
+}
+
+.play-button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex; /* Buttons nebeneinander anordnen */
+  gap: 10px; /* Abstand zwischen den Buttons */
+}
+
+.play-button {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003366;
+  background-color: white;
+  border: 2px solid #0077cc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.play-button:hover {
+  background-color: #f0f8ff;
+}
+
+.play-button:active {
+  background-color: #d9eaff;
+}
